@@ -1,0 +1,67 @@
+/*Element text manipulation involves modifying the text content of an HTML element dynamically using JavaScript
+. It allows developers to read, modify, or set the textual content of elements on a webpage. This can be done 
+using properties and methods like textContent, innerText, and innerHTML.
+
+Key Properties for Text Manipulation
+textContent: Gets or sets the text content of an element, including hidden text.
+innerText: Gets or sets the visible text of an element, excluding hidden elements or CSS display: none.
+innerHTML: Manipulates the HTML content of an element (not limited to text).*/
+
+
+<div id="example1">Hello, World!</div>
+<script>
+    const element = document.getElementById('example1');
+
+    // Reading text content
+    console.log(element.textContent); // Output: Hello, World!
+
+    // Modifying text content
+    element.textContent = "Text updated using textContent!";
+</script>
+
+
+
+// Changing Visible Text Using innerText
+<p id="example2">This is visible text.</p>
+<script>
+    const paragraph = document.getElementById('example2');
+
+    // Reading visible text
+    console.log(paragraph.innerText); // Output: This is visible text.
+
+    // Updating visible text
+    paragraph.innerText = "Modified using innerText!";
+</script>
+
+
+
+
+// Using innerHTML for Text and HTML
+<div id="example3">Original <b>content</b>.</div>
+<script>
+    const div = document.getElementById('example3');
+
+    // Reading HTML content
+    console.log(div.innerHTML); // Output: Original <b>content</b>.
+
+    // Changing HTML content
+    div.innerHTML = "<em>Updated</em> content with HTML.";
+</script>
+
+
+
+//Appending Text Dynamically
+<ul id="example4">
+    <li>Item 1</li>
+</ul>
+<script>
+    const ul = document.getElementById('example4');
+
+    // Create a new list item
+    const newItem = document.createElement('li');
+    newItem.textContent = "Item 2";
+
+    // Append it to the list
+    ul.appendChild(newItem);
+</script>
+

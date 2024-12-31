@@ -1,0 +1,62 @@
+/*JavaScript DOM Selection(dom manipulation)
+he Document Object Model (DOM) in JavaScript allows you to access and manipulate
+the structure, style, and content of HTML documents. DOM selection refers
+ to methods used to select and interact with elements in the DOM.
+
+ getElementById
+Selects an HTML element based on its id attribute.
+Returns the first matching element (since id is unique in an HTML document).
+
+// HTML: <div id="myDiv">Hello World!</div>
+const element = document.getElementById("myDiv");
+console.log(element.textContent); // Output: Hello World!*/
+
+
+
+getElementsByClassName
+Selects all HTML elements with a specific class name.
+Returns a live HTMLCollection.
+// HTML: <p class="example">Paragraph 1</p><p class="example">Paragraph 2</p>
+const elements = document.getElementsByClassName("example");
+for (let i = 0; i < elements.length; i++) {
+  console.log(elements[i].textContent);
+}
+// Output: Paragraph 1
+//         Paragraph 2
+
+
+
+getElementsByTagName
+Selects all HTML elements with a specific tag name (e.g., div, p, span).
+Returns a live HTMLCollection.
+// HTML: <p>First</p><p>Second</p>
+const paragraphs = document.getElementsByTagName("p");
+for (let p of paragraphs) {
+  console.log(p.textContent);
+}
+// Output: First
+//         Second
+
+
+
+querySelector
+Selects the first element that matches a CSS selector.
+Returns a single Element or null if no match is found.
+// HTML: <div class="container">Selected</div>
+const container = document.querySelector(".container");
+console.log(container.textContent); // Output: Selected
+
+
+
+
+
+querySelectorAll
+Selects all elements that match a CSS selector.
+Returns a static NodeList.
+// HTML: <li>Item 1</li><li>Item 2</li>
+const listItems = document.querySelectorAll("li");
+listItems.forEach(item => console.log(item.textContent));
+// Output: Item 1
+//         Item 2
+
+

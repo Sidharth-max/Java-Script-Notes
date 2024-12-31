@@ -1,0 +1,139 @@
+/*The Document Object Model (DOM) is a programming interface for web documents. It represents the
+structure of a document (like HTML or XML) as a tree of objects, allowing JavaScript to manipulate the content,
+ structure, and styles dynamically.
+
+Key Features of the DOM:
+
+Represents the structure of a web page as a tree.
+Allows dynamic modification of HTML elements and attributes.
+Supports interaction with CSS and events.
+
+JavaScript DOM Manipulation
+DOM Manipulation refers to using JavaScript to change elements, attributes, or content of an HTML document.
+
+Examples include:
+
+Adding or removing elements.
+Changing styles.
+Updating content.
+
+Accessing an Element by ID
+Use getElementById to access and manipulate an element*/
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example</title>
+</head>
+<body>
+  <h1 id="title">Hello, World!</h1>
+  <script>
+    const title = document.getElementById('title');
+    title.textContent = "Welcome to JavaScript DOM!";
+  </script>
+</body>
+</html>
+
+
+
+
+ /*Changing Element Styles
+Modify the style property to dynamically change an element's appearance.*/
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Styles</title>
+</head>
+<body>
+  <p id="text">This is a paragraph.</p>
+  <button onclick="changeColor()">Change Color</button>
+  <script>
+    function changeColor() {
+      const text = document.getElementById('text');
+      text.style.color = "blue";
+      text.style.fontSize = "20px";
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+ /*Adding a New Element
+Use createElement and appendChild to add a new element dynamically.*/
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Element</title>
+</head>
+<body>
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+  <button onclick="addItem()">Add Item</button>
+  <script>
+    function addItem() {
+      const list = document.getElementById('list');
+      const newItem = document.createElement('li');
+      newItem.textContent = "Item 3";
+      list.appendChild(newItem);
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+ /*Removing an Element
+Use removeChild to delete an element from the DOM.*/
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remove Element</title>
+</head>
+<body>
+  <ul id="list">
+    <li id="item">Item to remove</li>
+  </ul>
+  <button onclick="removeItem()">Remove Item</button>
+  <script>
+    function removeItem() {
+      const list = document.getElementById('list');
+      const item = document.getElementById('item');
+      list.removeChild(item);
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+ /*Handling Events
+Add event listeners to handle user interactions.*/
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Listener</title>
+</head>
+<body>
+  <button id="btn">Click Me</button>
+  <script>
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', () => {
+      alert('Button clicked!');
+    });
+  </script>
+</body>
+</html>
+
+
+
