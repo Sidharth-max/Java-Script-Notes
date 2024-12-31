@@ -60,6 +60,7 @@ function* fibonacci() {
   }
 }
 
+
 const fib = fibonacci();
 console.log(fib.next().value); // 0
 console.log(fib.next().value); // 1
