@@ -88,4 +88,3 @@ export function farewell(name) {
 import { greet, farewell } from './utils.js';
 console.log(greet('Akash'));
 console.log(farewell('Akash'));*/
-
