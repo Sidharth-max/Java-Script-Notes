@@ -1,87 +1,72 @@
 # JavaScript Notes
 
-Welcome to the JavaScript Notes repository! This collection of notes is designed to help you understand and master JavaScript, one of the most popular programming languages in the world.
+Welcome! Click any chapter to jump to its corresponding file or topic.
 
-## Table of Contents
+---
 
-1. [Introduction](#introduction)
-2. [Basics](#basics)
-    - [Syntax](#syntax)
-    - [Variables](#variables)
-    - [Data Types](#data-types)
-3. [Control Structures](#control-structures)
-    - [Conditionals](#conditionals)
-    - [Loops](#loops)
-4. [Functions](#functions)
-5. [Objects](#objects)
-6. [DOM Manipulation](#dom-manipulation)
-7. [Events](#events)
-8. [Asynchronous JavaScript](#asynchronous-javascript)
-    - [Promises](#promises)
-    - [Async/Await](#asyncawait)
-9. [ES6+ Features](#es6-features)
-10. [Best Practices](#best-practices)
+## Chapter 1: Basics
 
-## Introduction
+1. [Variable Declarations](./letconst.js)  
+2. [Type Conversion](./typeconversion.js)  
+3. [If Statements](./if.js)  
+4. [Switch Statements](./swtich.js)  
+5. [Strict Mode](./strict.js)  
 
-JavaScript is a versatile, high-level programming language that is essential for web development. It allows you to create dynamic and interactive web pages.
+---
 
-## Basics
+## Chapter 2: Data Types & Structures
 
-### Syntax
+1. [Strings](./string.js)  
+2. [Arrays](./Array.js)  
+3. [Objects](./objects.js)  
+4. [Maps](./map.js)  
+5. [Symbols](./symbol.js)  
+6. [JSON](./json.js)  
 
-JavaScript syntax is the set of rules that define a correctly structured JavaScript program.
+---
 
-### Variables
+## Chapter 3: Functions & Scopes
 
-Variables are containers for storing data values. In JavaScript, you can declare variables using `var`, `let`, or `const`.
+1. [Functions](./function.js)  
+2. [Arrow Functions](./arrowfunction.js)  
+3. [Closures](./closure.js)  
+4. [this Keyword](./this.js)  
+5. [Call, Bind & Apply](./callbindappply.js)  
+6. [Scope](./scope.js)  
+7. [Hoisting](./hoisting.js)  
 
-### Data Types
+---
 
-JavaScript supports various data types including strings, numbers, booleans, objects, and more.
+## Chapter 4: Advanced Concepts
 
-## Control Structures
+1. [ES6 Features](./Es6.js)  
+2. [Classes](./class.js)  
+3. [Generators](./Generators.js)  
+4. [Iterators](./itertor.js)  
+5. [Destructuring](./Destructuring.js)  
+6. [Default Parameters](./default.js)  
+7. [Spread Operator](./spread.js)  
+8. [Rest Operator](./rest.js)  
+9. [Promise](./promise.js)  
+10. [Modules](./modules.js)  
 
-### Conditionals
+---
 
-Conditional statements control the flow of execution based on certain conditions. Common conditional statements include `if`, `else if`, and `else`.
+## Chapter 5: Control Flow & Loops
 
-### Loops
+1. [Loops](./loop.js)  
 
-Loops are used to execute a block of code repeatedly. Common loops include `for`, `while`, and `do...while`.
+---
 
-## Functions
+## Chapter 6: Misc/Utilities
 
-Functions are reusable blocks of code that perform a specific task. They can take parameters and return values.
+1. [Input Handling](./input.js)  
+2. [Let vs. Const Examples](./letconst.js)  
 
-## Objects
+---
 
-Objects are collections of key-value pairs. They are used to store and manipulate data.
+## Chapter 7: DOM & HTML
 
-## DOM Manipulation
-
-The Document Object Model (DOM) is a programming interface for web documents. JavaScript can be used to manipulate the DOM to change the content and structure of web pages.
-
-## Events
-
-Events are actions that occur in the browser, such as clicks, form submissions, and page loads. JavaScript can be used to handle these events and create interactive web pages.
-
-## Asynchronous JavaScript
-
-### Promises
-
-Promises are used to handle asynchronous operations in JavaScript. They represent a value that may be available now, in the future, or never.
-
-### Async/Await
-
-`async` and `await` are syntactic sugar built on top of promises, making asynchronous code easier to write and read.
-
-## ES6+ Features
-
-ES6 (ECMAScript 2015) introduced many new features to JavaScript, including arrow functions, classes, template literals, and more.
-
-## Best Practices
-
-Following best practices helps you write clean, efficient, and maintainable code. This section covers coding standards, naming conventions, and other tips.
-
-Happy coding!
+1. [DOM Basics](./dom.html)  
+2. [DOM Selection](./domselection.html)  
+3. [Element Text Manipulation](./elementtextmanipultaion.html)  
